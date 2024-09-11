@@ -27,7 +27,7 @@
 /* Corps de la page */
 body { background-color: var(--black);}
 
-nav, main, footer {
+nav, footer {
     background-color: var(--marine);
     padding: 5px 10px;
     margin-top: -8px;
