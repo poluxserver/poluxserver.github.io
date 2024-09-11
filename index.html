@@ -19,7 +19,22 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">A propos</a></li>
             <li><a href="#">Vidéos</a></li>
-            <li><a href="#">Rejoindre</a></li>
+            <li title="Veuillez activer les notifications">
+                <a href="#" onclick="notifyServer()">Rejoindre</a>
+                <script>
+                    function notifyServer() {
+                        if ("Notification" in window && Notification.permission !== "denied") {
+                            Notification.requestPermission().then(permission => {
+                                if (permission === "granted") {
+                                    new Notification("Rejoindre le serveur", {
+                                        body: "poluxcity.aternos.me (v.1.21.1)"
+                                    });
+                                }
+                            });
+                        }
+                    }
+                </script>
+            </li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
