@@ -1,0 +1,7 @@
+@import "./style.css";
+
+main {
+    border: solid 1px;
+    border-radius: 15px;
+    margin-right: -10px;
+}

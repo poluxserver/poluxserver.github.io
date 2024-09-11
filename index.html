@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="PoluxCity">
+    <meta name="description" content="Une ville virtuelle, une communauté réelle">
+    <meta name="keywords" content="PoluxCity, Polux, PoluxSuperShark, Serveur Minecraft, RP Ville">
+    <link rel="stylesheet" href="./css/index.style.css">
+    <title>Accueil | PoluxCity - Une ville virtuelle, une communauté réelle</title>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="/"><h2>PoluxCity</h2></a>
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Une ville virtuelle, <br> Une communauté réelle</h1>
+    </main>
+
+    <footer>
+
+        <section>
+            <a href="#">
+                <img src="./img/logo.png" alt="Logo PoluxCity" width="5%">
+            </a>
+        </section>
+
+       <section>
+        <p>Légal</p>
+        <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">CGU-CGV</a></li>
+            <li><a href="#">Vie privée</a></li>
+            <li><a href="#">Règlement</a></li>
+        </ul>
+       </section>
+
+        <div class="copy">
+            <p>&copy; PoluxCity 2024 </p>
+        </div>
+
+    </footer>
+      
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+    <!--
+        I didn't like these clan like
+        - Kyle
+        - L4tence
+        - Rick
+        - CAP / 15HX
+    -->
+
+
+</body>
+</html>
