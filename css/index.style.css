@@ -1,10 +1,1 @@
 @import "./style.css";
-
-main {
-    background-color: var(--marine);
-    padding: 5px 10px;
-    margin-top: 7vh;
-    width: 100vw;
-    padding-left: 5vh;
-    margin-right: 5vh;
-}
