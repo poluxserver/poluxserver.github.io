@@ -7,3 +7,10 @@ main {
     margin-left: -7px;
     width: 100vw;
 }
+
+main * {
+    color: var(--marine);
+} main a {
+    color: var(--red);
+    text-decoration: underline;
+}
