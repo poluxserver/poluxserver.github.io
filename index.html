@@ -11,57 +11,9 @@
 </head>
 <body>
 
-    
-    <nav>
-        <a href="/"><h2>PoluxCity</h2></a>
-        <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Vidéos</a></li>
-            <li title="Veuillez activer les notifications">
-                <a href="#" onclick="notifyServer()">Rejoindre</a>
-                <script>
-                    function notifyServer() {
-                        if ("Notification" in window && Notification.permission !== "denied") {
-                            Notification.requestPermission().then(permission => {
-                                if (permission === "granted") {
-                                    new Notification("Rejoindre le serveur", {
-                                        body: "poluxcity.aternos.me (v.1.21.1)"
-                                    });
-                                }
-                            });
-                        }
-                    }
-                </script>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-
-    <br>
-
-    <main>
-
-        
-          
-    </main>
-
-    <br>
-      
-
-    <script>
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        const navLinks = document.querySelectorAll('.nav-links li');
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
-    </script>
+    <iframe src="https://discord.com/widget?id=1275096472014291107&theme=dark"
+        width="350" height="500" allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 </body>
 </html>
