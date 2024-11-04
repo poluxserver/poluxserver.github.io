@@ -1,10 +1,29 @@
-body {
-    font-family: "Montserrat", sans-serif;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    } body {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
 
+/* Selection on an element */
+::selection {
+    background-color: #005E7F;
+    color: white;
+}
+
+/* Navbar */
 nav {
-    background: #0082e6;
-    height: 80px;
+    background: #005E7F;
+    height: 50px;
     width: 100%;
 }
 
@@ -18,16 +37,17 @@ label.logo {
 
 nav ul {
     float: right;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 nav ul li {
     display: inline-block;
-    line-height: 80px;
+    line-height: 50px;
     margin: 0 5px;
 }
 
 nav ul li a {
+    border: solid transparent;
     color: white;
     font-size: 17px;
     padding: 7px 13px;
@@ -35,9 +55,8 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active,
-a:hover {
-    background: #1b9bff;
+a.active, a:hover {
+    border-bottom: solid #0082e6;
     transition: .5s;
 }
 
@@ -55,6 +74,7 @@ a:hover {
     display: none;
 }
 
+/* Responsive media query code for small screen */
 @media (max-width: 1050px) {
     label.logo {
         padding-left: 30px;
@@ -65,7 +85,6 @@ a:hover {
     }
 }
 
-/* Responsive media query code for small screen */
 @media (max-width: 890px) {
     .checkbtn {
         display: block;
@@ -96,8 +115,7 @@ a:hover {
         font-size: 20px;
     }
 
-    a:hover,
-    a.active {
+    a:hover, a.active {
         background: none;
         color: #0082e6;
     }
@@ -105,10 +123,4 @@ a:hover {
     #check:checked~ul {
         left: 0;
     }
-}
-
-section {
-    background: url("bg.jpg") no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
 }
