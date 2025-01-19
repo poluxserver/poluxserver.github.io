@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoluxSuperShark</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
 
-    <style>
-        /* ---- reset ---- */
-        body {
-            margin: 0;
-            font: normal 75% Arial, Helvetica, sans-serif;
-        }
+    <nav>
+        <h1><a href="#">PoluxSuperShark</a></h1>
+        <ul>
+            <li><a href="#" class="link">Accueil</a></li>
+            <li><a href="#" class="link">A propos</a></li>
+            <li><a href="#" class="link">Gallerie</a></li>
+            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link">Rejoindre</a></li>
+        </ul>
+    </nav>
 
-        canvas {
-            display: block;
-            vertical-align: bottom;
-        }
+    <main>
+        
+        <div id="hero">
+            <h1>Bienvenue dans le site de PoluxSuperShark !</h1>
+            <p>PoluxSuperShark est une ville dans Minecraft avec des trains et de beaux bâtiments !</p>
+        </div>
 
-        /* ---- particles.js container ---- */
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: #005E7F;
-            background-image: url("");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%;
-        }
+        <div id="lastvideo">
+            
+        </div>
+        
+        <div class="a">
+            <div class="box">
+                <h1>Rejoignez mon Discord !</h1>
+                <discord-widget id="1328149256556511275" width="350px" height="490px" footerText="Placeholder" color="#5865f2" backgroundColor="#0c0c0d" textColor="#ffffff" statusColor="#858585"></discord-widget>
+            </div>
+        </div>
 
-    </style>
+    </main>
 
-    <!-- particles.js container -->
-    <div id="particles-js"></div> <!-- stats - count particles -->
-    <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->    <script>
-        particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
-    </script>
-
+    <script src="https://dipped.dev/static/plugins/discordwidget/index.js"></script>
 </body>
-
 </html>

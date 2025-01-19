@@ -1,0 +1,49 @@
+/*Basic page styling*/
+html {
+    background: #222;
+    color: white;
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.a {
+    display: flex;
+    overflow-x: none;
+}
+.box {
+    width: 400px;
+    display: block;
+    padding: 0 15px;
+}
+tbody,
+tr,
+td {
+    border: 1px solid;
+}
+td {
+    padding: 4px 8px;
+}
+
+@media screen and (max-width: 1586px) {
+    .a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .a {
+        display: grid;
+        grid-template-columns: 50% 50% !important;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
