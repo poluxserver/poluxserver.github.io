@@ -107,3 +107,9 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
+.logo {
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+}
