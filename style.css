@@ -9,6 +9,11 @@
     list-style-type: none;
 }
 
+main {
+    background-color: #333333;
+    margin-top: 5vh;
+}
+
 main * {
     color: white;
 }
