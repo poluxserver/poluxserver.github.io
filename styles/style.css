@@ -9,7 +9,14 @@
     list-style-type: none;
 }
 
+/* Main content on a page */
 main#container {
     background-color: rgb(255, 255, 255);
     margin-top: 5rem;
+}
+
+/* Pseudos */
+code {
+    color: red;
+    font-family:'Courier New', Courier, monospace;
 }
